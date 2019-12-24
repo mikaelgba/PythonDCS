@@ -11,6 +11,12 @@ dicio2 ={"Seiya":13,"Shiryu":15,"Ikki":15,"Yoga":14,"Shun":13}
 dicio2["Seiya"] = 14
 print(dicio2)
 
+#Retorna se há uma chave no dicionario
+print("Seiya" in dicio2)
+
+#Retorna se há uma elemento no dicionario
+print(13 in dicio2.values())
+
 #Retorna o tamanho
 print(len(dicio2))
 
@@ -34,6 +40,14 @@ print(dicio4[1].upper())
 dicio4 = {1:"eu", 2:"você",3:"e o zubumafu"}
 print(dicio4[1].lower())
 
+#Adicionando um elemento
+dicio4[4] = " para sempre"
+print(dicio4)
+
+#Removendo um elemento
+del dicio4[4]
+print(dicio4)
+
 #Dicioario com subListas
 dicio5 = {"a":[23,58,19],"b":[35,75,95],"c":[41,53,24]}
 dicio5["a"][0] -= 2
@@ -44,3 +58,5 @@ dicio6 = {"id1":{"user1":"a"},"id2":{"user2":"b"}}
 dicio6["id1"]["user1"] = "A"
 dicio6["id2"]["user2"] = "B"
 print(dicio6)
+
+
