@@ -46,7 +46,7 @@ with open(origem,"r") as arquivo1:
 #Opção 2:
 open(destino,"w").write(open(origem,"r").read())
 
-
+#Lendo o arquivo json
 with open("arquivosUsados1/json_dados.txt","r") as lido_json:
     text3 = lido_json.read()
     imp = json.loads(text3)

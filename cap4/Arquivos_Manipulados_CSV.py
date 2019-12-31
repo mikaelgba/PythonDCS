@@ -24,7 +24,7 @@ with open("arquivosUsados1/numeros.csv","r") as arquivo:
     saida = list(leitura)
 print(saida)
 
-
+#Lendo as celulas apartir de um ponto espeficico
 for i in saida[1:]:
     print(i)
 
