@@ -2,11 +2,13 @@
 dicio = {"Nome": "Yoda", "Serie": "The Madalorian", "Filme": ["Star Wars 1","Star Wars 2","Star Wars 3"]}
 for i,j in dicio.items():
     print(i,j)
+print("\n")
 
 
 #Importando o JSON 
 import json 
 print(json.dumps(dicio))
+print("\n")
 
 
 #Criando um arquivo do tipo json
@@ -20,6 +22,7 @@ with open("arquivosUsados1/dados.json","r") as arquivo:
     saida = json.loads(arqui_json)
     print(saida)
 print(saida["Nome"])
+print("\n")
 
 
 #Lendo um arquivo json na web
@@ -29,6 +32,7 @@ arquivo_web = urlopen("http://vimeo.com/api/v2/video/57733101.json").read().deco
 saida2 = json.loads(arquivo_web)[0]
 print('Título: ', saida2["title"])
 print('URL: ', saida2["url"])
+print("\n")
 
 
 #Copiando um arquivo para outro
@@ -51,6 +55,7 @@ with open("arquivosUsados1/json_dados.txt","r") as lido_json:
     text3 = lido_json.read()
     imp = json.loads(text3)
 print(imp)
+print("\n")
 
 
 
