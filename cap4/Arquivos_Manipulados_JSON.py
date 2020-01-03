@@ -16,7 +16,7 @@ with open("arquivosUsados1/dados.json","w") as arquivo:
     arquivo.write(json.dumps(dicio))
 
 
-#Lendo o arquivo json recém riado   
+#Lendo o arquivo json recém criado   
 with open("arquivosUsados1/dados.json","r") as arquivo:
     arqui_json = arquivo.read()
     saida = json.loads(arqui_json)
@@ -27,7 +27,7 @@ print("\n")
 
 #Lendo um arquivo json na web
 from urllib.request import urlopen
-    
+
 arquivo_web = urlopen("http://vimeo.com/api/v2/video/57733101.json").read().decode('utf8')
 saida2 = json.loads(arquivo_web)[0]
 print('Título: ', saida2["title"])
